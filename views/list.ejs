@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+</head>
+<body>
+    <% if (kindOfDay == "Sunday" || kindOfDay === "Saturday") { %>
+        <h1 style="color: cornflowerblue;"> <%= kindOfDay %> Todo List </h1>
+    <% } else { %>
+        <h1 style="color: rgb(204, 66, 11);"> <%= kindOfDay %> Todo List </h1>
+    <% } %>
+
+
+    <ul>
+        <li>Buy Food</li>
+        <li>Cook Food</li>
+        <li>Eat Food</li>
+        <li> <%= newListItem %> </li>
+    </ul>
+
+    <form action="/" method="POST">
+        <input type="text" name="todoItem" placeholder="Add item">
+        <button type="submit" name="submit"> Add </button>
+
+    </form>
+</body>
+</html>
