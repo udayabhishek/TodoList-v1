@@ -16,7 +16,7 @@ console.log("PATH "+__dirname);
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://admin-uday:test123@cluster0.19gzd.mongodb.net/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const itemsSchema = {
     name: String
